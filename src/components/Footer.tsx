@@ -130,10 +130,13 @@ export default function Footer() {
           <p>
             &copy; {currentYear} NIRWIKARA Design And Build. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-5 sm:gap-6">
             <span className="hover:text-slate-400 cursor-pointer">Scale 1:100 DED</span>
             <span className="hover:text-slate-400 cursor-pointer">Photorealistic 3D Enscape</span>
             <span className="hover:text-slate-400 cursor-pointer">Turnkey Execution</span>
+            <a href="/admin" className="hover:text-[#00AEEF] text-slate-600 transition-colors font-mono text-[11px]" title="Admin Portal">
+              Admin
+            </a>
           </div>
         </div>
 
