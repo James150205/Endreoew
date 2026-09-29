@@ -250,17 +250,6 @@ export const defaultProjects: ProjectItem[] = [
     image: '/assets/images/project-1.jpg',
     specs: 'Solid Oak Slats, Architectural HPL, Custom Mirror Frame, 3000K Concealed LED',
   },
-  {
-    id: 23,
-    title: 'Media Backdrop & Sliding Door Wardrobe System',
-    category: 'Interior & Custom Joinery',
-    projectGroup: 'Master Suite Interior',
-    type: 'Media & Storage',
-    tag: 'Custom Joinery',
-    desc: 'Textured fluted media wall featuring indirect plinth illumination for curated footwear collection, paired with a sliding wardrobe combining warm oak and matte charcoal.',
-    image: '/assets/images/project-3.jpg',
-    specs: 'Charcoal & Oak Slats, Sliding Wardrobe, Indirect LED Plinth Display',
-  },
 
   // --- Group 5: Exclusive Boarding House — Modern Balinese Rental Living ---
   {

@@ -1,6 +1,6 @@
 import { defaultProjects, ProjectItem } from '@/data/defaultProjects';
 
-const STORAGE_KEY = 'nirwikara_portfolio_projects_v2';
+const STORAGE_KEY = 'nirwikara_portfolio_projects_v3';
 export const PORTFOLIO_UPDATED_EVENT = 'nirwikara_portfolio_updated';
 const ADMIN_PASS = 'N!rw1k4r@Build#2026';
 
