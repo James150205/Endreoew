@@ -1,0 +1,35 @@
+{
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    
+    "setup:images": "echo 'Place your images in public/assets/images/'",
+    "optimize:images": "echo 'Run image optimization tools here'",
+    
+    "update:number": "echo 'Use find/replace ALL instances of 6281234567890 in source files'",
+    "update:name": "echo 'Use find/replace ALL instances of BangunRapi in source files'",
+    "test:deploy": "npm run build && echo 'Build successful, ready to deploy'",
+    
+    "clean": "rm -rf .next node_modules/.cache"
+  },
+  
+  "dependencies": {
+    "next": "^16.3.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^20",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^8",
+    "eslint-config-next": "^16.3.6",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5"
+  }
+}
