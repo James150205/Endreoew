@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { ProjectItem, defaultProjects } from '@/data/defaultProjects';
-import { getStoredProjects, PORTFOLIO_UPDATED_EVENT } from '@/utils/portfolioStorage';
+import { getStoredProjects, fetchLiveProjects, PORTFOLIO_UPDATED_EVENT } from '@/utils/portfolioStorage';
 
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -10,8 +10,15 @@ export default function Portfolio() {
   const [projects, setProjects] = useState<ProjectItem[]>(defaultProjects);
 
   useEffect(() => {
-    // Load persisted projects
+    // Initial instant load from localStorage/defaults
     setProjects(getStoredProjects());
+
+    // Asynchronously fetch latest from live API
+    fetchLiveProjects().then((live) => {
+      if (live && live.length > 0) {
+        setProjects(live);
+      }
+    });
 
     // Listen for real-time updates from /admin
     const handleUpdate = () => {

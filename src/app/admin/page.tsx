@@ -5,11 +5,13 @@ import Link from 'next/link';
 import { ProjectItem, defaultProjects } from '@/data/defaultProjects';
 import {
   getStoredProjects,
+  fetchLiveProjects,
   addProject,
   updateProject,
   deleteProject,
   resetToDefaultProjects,
-  saveProjects,
+  saveLocalProjects,
+  compressImageFile,
 } from '@/utils/portfolioStorage';
 
 // Credentials for Admin Access
@@ -25,6 +27,8 @@ export default function AdminPage() {
 
   const [projects, setProjects] = useState<ProjectItem[]>([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
+  const [isCompressing, setIsCompressing] = useState(false);
   const [editingProject, setEditingProject] = useState<ProjectItem | null>(null);
   const [notification, setNotification] = useState<{ text: string; type: 'success' | 'error' } | null>(null);
 
@@ -44,13 +48,19 @@ export default function AdminPage() {
 
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // Check persisted auth session on mount
+  // Check persisted auth session on mount & load live data
   useEffect(() => {
     const session = localStorage.getItem(AUTH_KEY);
     if (session === 'true') {
       setIsAuthenticated(true);
     }
     setProjects(getStoredProjects());
+
+    fetchLiveProjects().then((live) => {
+      if (live && live.length > 0) {
+        setProjects(live);
+      }
+    });
   }, []);
 
   const showToast = (text: string, type: 'success' | 'error' = 'success') => {
@@ -82,8 +92,8 @@ export default function AdminPage() {
     setPasswordInput('');
   };
 
-  // Image Upload File Handler (converts to optimized Base64)
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  // Image Upload File Handler with Auto-Compression
+  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
 
@@ -92,12 +102,22 @@ export default function AdminPage() {
       return;
     }
 
-    const reader = new FileReader();
-    reader.onload = (event) => {
-      const result = event.target?.result as string;
-      setImagePreview(result);
-    };
-    reader.readAsDataURL(file);
+    try {
+      setIsCompressing(true);
+      const compressedDataUrl = await compressImageFile(file, 1600, 1200, 0.85);
+      setImagePreview(compressedDataUrl);
+      showToast('Image optimized & ready for upload.');
+    } catch (err) {
+      console.error('Compression error:', err);
+      // Fallback to basic file reader
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        setImagePreview(event.target?.result as string);
+      };
+      reader.readAsDataURL(file);
+    } finally {
+      setIsCompressing(false);
+    }
   };
 
   const openAddModal = () => {
@@ -130,7 +150,7 @@ export default function AdminPage() {
     setIsModalOpen(true);
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const finalImage = imageMode === 'upload' ? imagePreview : imageUrl.trim();
@@ -144,54 +164,68 @@ export default function AdminPage() {
       return;
     }
 
-    if (editingProject) {
-      const updated = updateProject(editingProject.id, {
-        title: title.trim(),
-        category,
-        projectGroup: projectGroup.trim() || 'Bali',
-        type: type.trim() || category,
-        tag: tag.trim() || '2026',
-        desc: desc.trim() || 'Modern architectural exhibit by NIRWIKARA.',
-        specs: specs.trim() || 'Premium Architectural Finish',
-        image: finalImage,
-      });
-      setProjects(updated);
-      showToast(`Exhibit "${title}" updated successfully!`);
-    } else {
-      const updated = addProject({
-        title: title.trim(),
-        category,
-        projectGroup: projectGroup.trim() || 'Bali',
-        type: type.trim() || category,
-        tag: tag.trim() || '2026',
-        desc: desc.trim() || 'Modern architectural exhibit by NIRWIKARA.',
-        specs: specs.trim() || 'Premium Architectural Finish',
-        image: finalImage,
-      });
-      setProjects(updated);
-      showToast(`New exhibit "${title}" added and live on the website!`);
+    try {
+      setIsSaving(true);
+      if (editingProject) {
+        const updated = await updateProject(editingProject.id, {
+          title: title.trim(),
+          category,
+          projectGroup: projectGroup.trim() || 'Bali',
+          type: type.trim() || category,
+          tag: tag.trim() || '2026',
+          desc: desc.trim() || 'Modern architectural exhibit by NIRWIKARA.',
+          specs: specs.trim() || 'Premium Architectural Finish',
+          image: finalImage,
+        });
+        setProjects(updated);
+        showToast(`Exhibit "${title}" updated and synced successfully!`);
+      } else {
+        const updated = await addProject({
+          title: title.trim(),
+          category,
+          projectGroup: projectGroup.trim() || 'Bali',
+          type: type.trim() || category,
+          tag: tag.trim() || '2026',
+          desc: desc.trim() || 'Modern architectural exhibit by NIRWIKARA.',
+          specs: specs.trim() || 'Premium Architectural Finish',
+          image: finalImage,
+        });
+        setProjects(updated);
+        showToast(`New exhibit "${title}" published and live on website!`);
+      }
+      setIsModalOpen(false);
+    } catch (err) {
+      showToast('Failed to save exhibit. Please try again.', 'error');
+    } finally {
+      setIsSaving(false);
     }
-
-    setIsModalOpen(false);
   };
 
-  const handleDelete = (id: number, projectTitle: string) => {
+  const handleDelete = async (id: number, projectTitle: string) => {
     if (confirm(`Are you sure you want to delete "${projectTitle}" from the portfolio?`)) {
-      const updated = deleteProject(id);
-      setProjects(updated);
-      showToast(`Exhibit "${projectTitle}" deleted.`);
+      try {
+        const updated = await deleteProject(id);
+        setProjects(updated);
+        showToast(`Exhibit "${projectTitle}" deleted and synced.`);
+      } catch (err) {
+        showToast('Failed to delete exhibit.', 'error');
+      }
     }
   };
 
-  const handleResetDefaults = () => {
+  const handleResetDefaults = async () => {
     if (
       confirm(
         'Warning: This will reset the portfolio back to the original 24 curated exhibits. Are you sure?'
       )
     ) {
-      const updated = resetToDefaultProjects();
-      setProjects(updated);
-      showToast('Portfolio exhibits reset to original 24 exhibits.');
+      try {
+        const updated = await resetToDefaultProjects();
+        setProjects(updated);
+        showToast('Portfolio exhibits reset to original 24 exhibits.');
+      } catch (err) {
+        showToast('Failed to reset portfolio.', 'error');
+      }
     }
   };
 
@@ -215,7 +249,7 @@ export default function AdminPage() {
       try {
         const parsed = JSON.parse(event.target?.result as string);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          saveProjects(parsed);
+          saveLocalProjects(parsed);
           setProjects(parsed);
           showToast(`Imported ${parsed.length} exhibits successfully!`);
         } else {
@@ -769,9 +803,19 @@ export default function AdminPage() {
                 </button>
                 <button
                   type="submit"
-                  className="px-6 py-2.5 rounded-xl bg-[#00AEEF] hover:bg-[#0096ce] text-white text-xs font-bold uppercase tracking-wider transition-all duration-200 shadow-md active:scale-95 cursor-pointer"
+                  disabled={isSaving || isCompressing}
+                  className="px-6 py-2.5 rounded-xl bg-[#00AEEF] hover:bg-[#0096ce] disabled:opacity-50 text-white text-xs font-bold uppercase tracking-wider transition-all duration-200 shadow-md active:scale-95 cursor-pointer flex items-center gap-2"
                 >
-                  {editingProject ? 'Save Changes' : 'Publish Exhibit'}
+                  {isSaving ? (
+                    <>
+                      <span className="w-3 h-3 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+                      <span>Saving &amp; Syncing...</span>
+                    </>
+                  ) : editingProject ? (
+                    'Save Changes'
+                  ) : (
+                    'Publish Exhibit'
+                  )}
                 </button>
               </div>
             </form>
