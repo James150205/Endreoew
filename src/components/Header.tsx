@@ -88,7 +88,7 @@ export default function Header() {
           {/* Right Action Button */}
           <div className="hidden sm:flex items-center gap-4 xl:gap-5">
             <a
-              href="https://wa.me/6281234567890?text=Hello%20NIRWIKARA%20Design%20And%20Build,%20I%20would%20like%20to%20inquire%20about%20a%20new%20project."
+              href="https://wa.me/qr/JQDCEWBBMW35I1?s=v"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs font-bold tracking-wider uppercase bg-[#090D16] hover:bg-[#00AEEF] text-white transition-all duration-200 shadow-sm hover:shadow-md active:scale-95 focus-visible:ring-2 focus-visible:ring-[#00AEEF]"
@@ -144,7 +144,7 @@ export default function Header() {
 
             <div className="pt-3 border-t border-slate-100">
               <a
-                href="https://wa.me/6281234567890?text=Hello%20NIRWIKARA%20Design%20And%20Build,%20I%20would%20like%20to%20inquire%20about%20a%20new%20project."
+                href="https://wa.me/qr/JQDCEWBBMW35I1?s=v"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMobileOpen(false)}

@@ -166,7 +166,7 @@ export default function FeaturedWorks() {
 
               <div>
                 <a
-                  href="https://wa.me/6281234567890?text=Hello%20NIRWIKARA,%20I%20would%20like%20to%20inquire%20about%20a%20residential%20project%20similar%20to%20Private%20Residence%20Pering%20Gianyar."
+                  href="https://wa.me/qr/JQDCEWBBMW35I1?s=v"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 min-h-[46px] px-6 py-3 rounded-xl bg-slate-100 hover:bg-[#00AEEF] hover:text-white text-[#090D16] text-xs font-bold tracking-wider uppercase transition-all duration-200 active:scale-95 touch-manipulation shadow-sm cursor-pointer"
@@ -272,7 +272,7 @@ export default function FeaturedWorks() {
 
               <div>
                 <a
-                  href="https://wa.me/6281234567890?text=Hello%20NIRWIKARA,%20I%20would%20like%20to%20inquire%20about%20a%20commercial%20or%20hospitality%20project%20similar%20to%20Public%20Facility%20Gianyar."
+                  href="https://wa.me/qr/JQDCEWBBMW35I1?s=v"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 min-h-[46px] px-6 py-3 rounded-xl bg-slate-100 hover:bg-[#00AEEF] hover:text-white text-[#090D16] text-xs font-bold tracking-wider uppercase transition-all duration-200 active:scale-95 touch-manipulation shadow-sm cursor-pointer"
@@ -377,7 +377,7 @@ export default function FeaturedWorks() {
 
               <div>
                 <a
-                  href="https://wa.me/6281234567890?text=Hello%20NIRWIKARA,%20I%20would%20like%20to%20inquire%20about%20a%20project%20similar%20to%20Urban%20Shophouses."
+                  href="https://wa.me/qr/JQDCEWBBMW35I1?s=v"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 min-h-[46px] px-6 py-3 rounded-xl bg-slate-100 hover:bg-[#00AEEF] hover:text-white text-[#090D16] text-xs font-bold tracking-wider uppercase transition-all duration-200 active:scale-95 touch-manipulation shadow-sm cursor-pointer"
@@ -482,7 +482,7 @@ export default function FeaturedWorks() {
 
               <div>
                 <a
-                  href="https://wa.me/6281234567890?text=Hello%20NIRWIKARA,%20I%20would%20like%20to%20inquire%20about%20a%20project%20similar%20to%20Exclusive%20Boarding%20House%20Bali."
+                  href="https://wa.me/qr/JQDCEWBBMW35I1?s=v"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 min-h-[46px] px-6 py-3 rounded-xl bg-slate-100 hover:bg-[#00AEEF] hover:text-white text-[#090D16] text-xs font-bold tracking-wider uppercase transition-all duration-200 active:scale-95 touch-manipulation shadow-sm cursor-pointer"
