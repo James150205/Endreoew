@@ -13,9 +13,9 @@ import {
 } from '@/utils/portfolioStorage';
 
 // Credentials for Admin Access
-const ADMIN_USER = 'admin';
-const ADMIN_PASS = 'nirwikara2026!';
-const AUTH_KEY = 'nirwikara_admin_session_v1';
+const ADMIN_USER = 'nirwikara';
+const ADMIN_PASS = 'N!rw1k4r@Build#2026';
+const AUTH_KEY = 'nirwikara_admin_session_v2';
 
 export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
@@ -288,7 +288,7 @@ export default function AdminPage() {
                   required
                   value={usernameInput}
                   onChange={(e) => setUsernameInput(e.target.value)}
-                  placeholder="admin"
+                  placeholder="nirwikara"
                   className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 text-white text-sm outline-none transition-all placeholder:text-slate-600"
                 />
               </div>
