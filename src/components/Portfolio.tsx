@@ -7,12 +7,12 @@ export default function Portfolio() {
   const [activeImageIndex, setActiveImageIndex] = useState<number | null>(null);
 
   const projects = [
-    // --- Group 1: Rumah Tinggal — Pering, Gianyar (New Enscape Renders) ---
+    // --- Group 1: Private Residence — Pering, Gianyar (New Enscape Renders) ---
     {
       id: 1,
-      title: 'Rumah Tinggal — Modern Tropical Cluster Street Elevation',
+      title: 'Private Residence — Modern Tropical Cluster Street Elevation',
       category: 'Residential Architecture',
-      projectGroup: 'Rumah Tinggal Pering',
+      projectGroup: 'Private Residence Pering',
       type: 'Cluster Residential Architecture',
       tag: 'August 2026',
       desc: 'Master street elevation of three contiguous modern tropical homes in Pering, Gianyar, uniting dark hip roofs, Balinese stone relief entry portals, and shaded vehicle pergolas.',
@@ -21,9 +21,9 @@ export default function Portfolio() {
     },
     {
       id: 2,
-      title: 'Entrance Gate & Private Arrival Courtyard — Rumah Tinggal',
+      title: 'Entrance Gate & Private Arrival Courtyard — Private Residence',
       category: 'Residential Architecture',
-      projectGroup: 'Rumah Tinggal Pering',
+      projectGroup: 'Private Residence Pering',
       type: 'Courtyard Architecture',
       tag: 'Landscape & Entry',
       desc: 'Private arrival courtyard featuring natural river stone masonry, mature frangipani tree, teak entrance deck, and traditional Balinese relief carving.',
@@ -34,7 +34,7 @@ export default function Portfolio() {
       id: 3,
       title: 'Twilight Facade & Architectural Lighting Scheme',
       category: 'Residential Architecture',
-      projectGroup: 'Rumah Tinggal Pering',
+      projectGroup: 'Private Residence Pering',
       type: 'Lighting & Facade',
       tag: 'Night Architecture',
       desc: 'Dusk visualization showing up-and-down architectural perimeter sconces, illuminated entry archways, and warm interior glow.',
@@ -45,7 +45,7 @@ export default function Portfolio() {
       id: 4,
       title: 'Wide Perspective Streetscape — Residential Community',
       category: 'Residential Architecture',
-      projectGroup: 'Rumah Tinggal Pering',
+      projectGroup: 'Private Residence Pering',
       type: 'Streetscape View',
       tag: 'Exterior Architecture',
       desc: 'Dynamic street angle highlighting rhythmic rooflines, clean white wall volumes, and private carport configurations with lush perimeter green buffers.',
@@ -56,7 +56,7 @@ export default function Portfolio() {
       id: 5,
       title: 'Open Living Lounge — Marble Media Wall & Fluted Oak',
       category: 'Interior & Custom Joinery',
-      projectGroup: 'Rumah Tinggal Pering',
+      projectGroup: 'Private Residence Pering',
       type: 'Living Room Interior',
       tag: 'Custom Joinery',
       desc: 'Harmonious living room center featuring bookmatched marble TV backdrop, vertical fluted oak acoustic slats, floating console, and modern modular sofa.',
@@ -67,7 +67,7 @@ export default function Portfolio() {
       id: 6,
       title: 'Living Room Media Alcove & Integrated Display Shelving',
       category: 'Interior & Custom Joinery',
-      projectGroup: 'Rumah Tinggal Pering',
+      projectGroup: 'Private Residence Pering',
       type: 'Living Room Interior',
       tag: 'Joinery Architecture',
       desc: 'Perspective showing open display shelving, curated art niche, and concealed bedroom door seamlessly integrated into the wall surface.',
@@ -78,7 +78,7 @@ export default function Portfolio() {
       id: 7,
       title: 'Open-Concept Living & Kitchenette Panorama',
       category: 'Interior & Custom Joinery',
-      projectGroup: 'Rumah Tinggal Pering',
+      projectGroup: 'Private Residence Pering',
       type: 'Kitchen & Dining',
       tag: 'Space Planning',
       desc: 'Comprehensive perspective connecting the entertainment lounge to the compact kitchenette pantry featuring sage green ceramic tile backsplash.',
@@ -89,7 +89,7 @@ export default function Portfolio() {
       id: 8,
       title: 'Spatial Circulation — Foyer to Lounge Flow',
       category: 'Interior & Custom Joinery',
-      projectGroup: 'Rumah Tinggal Pering',
+      projectGroup: 'Private Residence Pering',
       type: 'Interior Circulation',
       tag: 'Spatial Design',
       desc: 'Wide-angle perspective illustrating seamless circulation from the private entrance hallway into the open-plan living and culinary zone.',
@@ -100,7 +100,7 @@ export default function Portfolio() {
       id: 9,
       title: 'Master Bedroom Suite & Bespoke Joinery Wardrobe',
       category: 'Interior & Custom Joinery',
-      projectGroup: 'Rumah Tinggal Pering',
+      projectGroup: 'Private Residence Pering',
       type: 'Master Bedroom',
       tag: 'Custom Joinery',
       desc: 'Restful master suite with custom full-height wardrobe combining matte stone laminate panels, center oak garment niche, and floating TV console.',
@@ -111,7 +111,7 @@ export default function Portfolio() {
       id: 10,
       title: 'Luxury Ensuite Bathroom — Charcoal Marble Shower',
       category: 'Interior & Custom Joinery',
-      projectGroup: 'Rumah Tinggal Pering',
+      projectGroup: 'Private Residence Pering',
       type: 'Bathroom Architecture',
       tag: 'Luxury Finishes',
       desc: 'Minimalist spa bathroom finished with bookmatched charcoal marble slabs, matte black rain shower column, and frameless glass divider.',
@@ -122,7 +122,7 @@ export default function Portfolio() {
       id: 11,
       title: 'Recessed Shower Niche with Vertical Concealed LED',
       category: 'Interior & Custom Joinery',
-      projectGroup: 'Rumah Tinggal Pering',
+      projectGroup: 'Private Residence Pering',
       type: 'Bathroom Detail',
       tag: 'Architectural Lighting',
       desc: 'Three-tier recessed shower wall niche with concealed vertical LED strip light providing atmospheric ambient glow.',
@@ -133,7 +133,7 @@ export default function Portfolio() {
       id: 12,
       title: 'Ensuite Wet Area & Minimalist Sanitary Suite',
       category: 'Interior & Custom Joinery',
-      projectGroup: 'Rumah Tinggal Pering',
+      projectGroup: 'Private Residence Pering',
       type: 'Bathroom Architecture',
       tag: 'Sanitary Layout',
       desc: 'High-angle perspective displaying the complete ensuite arrangement, circular ceiling spotlight, and seamless transition between wet and dry zones.',
@@ -198,24 +198,24 @@ export default function Portfolio() {
       specs: 'Honed Marble Flooring, Pilates Reformer Stations, Poolfront Glazing',
     },
 
-    // --- Group 3: Rukos — Modern Gable Living & Shophouse Complex ---
+    // --- Group 3: Urban Shophouses — Modern Gable Living Complex ---
     {
       id: 18,
-      title: 'Rukos Modern Gable — Front Facade Elevation',
+      title: 'Urban Shophouses Modern Gable — Front Facade Elevation',
       category: 'Residential Architecture',
-      projectGroup: 'Rukos',
-      type: 'Rukos & Shophouse',
+      projectGroup: 'Urban Shophouses',
+      type: 'Urban Shophouses',
       tag: 'October 2025',
-      desc: 'Architectural front perspective of contemporary 3-story rukos uniting clean white geometric volumes, terracotta breeze blocks (roster), and warm cedar soffits.',
+      desc: 'Architectural front perspective of contemporary 3-story urban shophouses uniting clean white geometric volumes, terracotta breeze blocks (roster), and warm cedar soffits.',
       image: '/assets/images/ruko_exterior_front.jpg',
       specs: 'Gable Silhouette, Terracotta Breeze Blocks, Warm Cedar Soffits, Linear Facade LEDs',
     },
     {
       id: 19,
-      title: 'Dynamic Street Perspective — 3-Story Rukos Complex',
+      title: 'Dynamic Street Perspective — 3-Story Urban Shophouse Complex',
       category: 'Residential Architecture',
-      projectGroup: 'Rukos',
-      type: 'Rukos & Shophouse',
+      projectGroup: 'Urban Shophouses',
+      type: 'Urban Shophouses',
       tag: 'October 2025',
       desc: 'Low-angle perspective emphasizing the rhythmic pitched roofs, cantilevering glass-railing balconies, private carports, and integrated front landscape.',
       image: '/assets/images/ruko_exterior_angle1.jpg',
@@ -256,28 +256,28 @@ export default function Portfolio() {
       specs: 'Charcoal & Oak Slats, Sliding Wardrobe, Indirect LED Plinth Display',
     },
 
-    // --- Group 5: Rumah Kost Eksklusif — Modern Balinese Rental Living ---
+    // --- Group 5: Exclusive Boarding House — Modern Balinese Rental Living ---
     {
       id: 24,
-      title: 'Rumah Kost Eksklusif — Front Elevation & Courtyard',
+      title: 'Exclusive Boarding House — Front Elevation & Courtyard',
       category: 'Residential Architecture',
-      projectGroup: 'Rumah Kost Eksklusif',
-      type: 'Kost & Rental Living',
+      projectGroup: 'Exclusive Boarding House',
+      type: 'Boarding House & Rental',
       tag: 'New Project 2026',
-      desc: 'Perspektif depan hunian rumah kost eksklusif 2 lantai memadukan arsitektur tradisional Bali, atap genteng mahkota, fasad bertekstur hangat, dan pagar batu alam alami.',
+      desc: 'Front architectural perspective of a 2-story exclusive boarding house combining authentic Balinese aesthetics, crown tile roof, warm textured facade, and natural river stone perimeter wall.',
       image: '/assets/images/kost_exterior_angle1.jpg',
-      specs: 'Atap Genteng Bali Tradisional, Dinding Batu Alam, Balkon Baja Minimalis, Pintu & Jendela Kayu Jati',
+      specs: 'Traditional Balinese Crown Tile Roof, Natural Stone Masonry, Steel Balcony, Solid Teak Joinery',
     },
     {
       id: 25,
-      title: 'Sudut Fasad & Balkon Kamar — Rumah Kost Eksklusif',
+      title: 'Facade Angle & Private Room Balcony — Exclusive Boarding House',
       category: 'Residential Architecture',
-      projectGroup: 'Rumah Kost Eksklusif',
-      type: 'Kost & Rental Living',
+      projectGroup: 'Exclusive Boarding House',
+      type: 'Boarding House & Rental',
       tag: 'Exterior Architecture',
-      desc: 'Tampak sudut bangunan memperlihatkan akses koridor terbuka, balkon pribadi tiap kamar di lantai 2, pencahayaan alami optimal, dan lanskap taman tropis asri.',
+      desc: 'Corner perspective highlighting the open-air corridor access, private second-floor balconies, abundant natural ventilation, and verdant tropical landscaping.',
       image: '/assets/images/kost_exterior_angle2.jpg',
-      specs: 'Balkon Pribadi Kamar Lantai 2, Sirkulasi Udara Terbuka, Taman Tropis Depan, Finishing Cat Stucco Hangat',
+      specs: 'Private 2nd-Floor Balconies, Open-Air Circulation, Front Tropical Garden, Warm Stucco Finish',
     },
   ];
 
@@ -335,7 +335,7 @@ export default function Portfolio() {
               Architecture, Interiors &amp; Hospitality Projects
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mt-4 leading-relaxed">
-              Explore our expanded portfolio spanning Bali private tropical villa clusters, commercial hospitality wellness pavilions, rukos and multi-unit residences, and bespoke joinery interiors.
+              Explore our expanded portfolio spanning Bali private tropical residences, commercial hospitality wellness pavilions, urban shophouses and multi-unit residences, and bespoke joinery interiors.
             </p>
           </div>
 

@@ -7,7 +7,7 @@ export default function Hero() {
     {
       id: 'rumah-tinggal',
       number: '01',
-      title: 'Rumah Tinggal — Modern Tropical Residence',
+      title: 'Private Residence — Modern Tropical Living',
       category: 'Residential Architecture & 3D Visualization',
       location: 'Pering, Gianyar, Bali',
       image: '/assets/images/gallery/enscape_render_07.jpg',
@@ -17,7 +17,7 @@ export default function Hero() {
     {
       id: 'ruko',
       number: '02',
-      title: 'Rukos — Modern Gable Living & Shophouse Complex',
+      title: 'Urban Shophouses — Modern Gable Living Complex',
       category: 'Residential & Commercial Architecture',
       location: 'Urban Living Complex',
       image: '/assets/images/ruko_exterior_angle1.jpg',
@@ -37,7 +37,7 @@ export default function Hero() {
     {
       id: 'interior',
       number: '04',
-      title: 'Rumah Tinggal — Master Bedroom Suite & Custom Joinery',
+      title: 'Private Residence — Master Bedroom Suite & Custom Joinery',
       category: 'Interior Architecture & Bespoke Joinery',
       location: 'Pering, Gianyar, Bali',
       image: '/assets/images/gallery/enscape_render_05.jpg',

@@ -4,10 +4,10 @@ export default function Testimonials() {
   const testimonials = [
     {
       quote:
-        'NIRWIKARA brought an exceptional level of architectural discipline to our rukos complex. Their working drawings at Scale 1:100 were flawless, and the final built elevation matches the 3D Enscape simulation with absolute fidelity.',
+        'NIRWIKARA brought an exceptional level of architectural discipline to our urban shophouses complex. Their working drawings at Scale 1:100 were flawless, and the final built elevation matches the 3D Enscape simulation with absolute fidelity.',
       author: 'Hendrik Pratama',
       role: 'Property Developer',
-      commission: '3-Story Rukos Complex',
+      commission: '3-Story Urban Shophouse Complex',
       year: '2025',
     },
     {

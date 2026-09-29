@@ -77,7 +77,7 @@ export default function FeaturedWorks() {
         </div>
 
         {/* ========================================================================= */}
-        {/* CASE STUDY 01: RUMAH TINGGAL — MODERN TROPICAL RESIDENCE (PERING, GIANYAR) */}
+        {/* CASE STUDY 01: PRIVATE RESIDENCE — MODERN TROPICAL LIVING (PERING, GIANYAR) */}
         {/* ========================================================================= */}
         <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-5 sm:p-10 lg:p-12 mb-16 sm:mb-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
@@ -90,11 +90,11 @@ export default function FeaturedWorks() {
               >
                 <img
                   src={activeVillaImg}
-                  alt="Rumah Tinggal Pering Gianyar Showcase"
+                  alt="Private Residence Pering Gianyar Showcase"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
                 />
                 <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-white/95 backdrop-blur-md px-3 py-1 rounded-md text-[11px] font-bold text-[#090D16] shadow-sm">
-                  Rumah Tinggal • Pering, Gianyar
+                  Private Residence • Pering, Gianyar
                 </div>
                 
                 {/* Touch/Hover Enlarge Badge */}
@@ -133,7 +133,7 @@ export default function FeaturedWorks() {
                   Project No. 2026.082
                 </span>
                 <h3 className="text-xl sm:text-3xl font-bold font-display text-[#090D16] mt-1 leading-snug">
-                  Rumah Tinggal — Modern Tropical Residence
+                  Private Residence — Modern Tropical Living
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-500 font-mono mt-1">
                   Pering, Gianyar, Bali • Residential Architecture &amp; Bespoke Interior
@@ -166,7 +166,7 @@ export default function FeaturedWorks() {
 
               <div>
                 <a
-                  href="https://wa.me/6281234567890?text=Hello%20NIRWIKARA,%20I%20would%20like%20to%20inquire%20about%20a%20residential%20project%20similar%20to%20Rumah%20Tinggal%20Pering%20Gianyar."
+                  href="https://wa.me/6281234567890?text=Hello%20NIRWIKARA,%20I%20would%20like%20to%20inquire%20about%20a%20residential%20project%20similar%20to%20Private%20Residence%20Pering%20Gianyar."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 min-h-[46px] px-6 py-3 rounded-xl bg-slate-100 hover:bg-[#00AEEF] hover:text-white text-[#090D16] text-xs font-bold tracking-wider uppercase transition-all duration-200 active:scale-95 touch-manipulation shadow-sm cursor-pointer"
@@ -289,7 +289,7 @@ export default function FeaturedWorks() {
         </div>
 
         {/* ========================================================================= */}
-        {/* CASE STUDY 03: RUKOS — MODERN GABLE URBAN COMPLEX */}
+        {/* CASE STUDY 03: URBAN SHOPHOUSES — MODERN GABLE LIVING COMPLEX */}
         {/* ========================================================================= */}
         <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-5 sm:p-10 lg:p-12 mb-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
@@ -302,11 +302,11 @@ export default function FeaturedWorks() {
               >
                 <img
                   src={activeTownhouseImg}
-                  alt="Rukos — Modern Gable Elevation"
+                  alt="Urban Shophouses Elevation"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
                 />
                 <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-white/95 backdrop-blur-md px-3 py-1 rounded-md text-[11px] font-bold text-[#090D16] shadow-sm">
-                  Rukos Modern Gable
+                  Urban Shophouses
                 </div>
                 
                 <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 bg-[#090D16]/85 text-white px-3 py-1.5 rounded-lg flex items-center gap-1.5 text-xs font-semibold backdrop-blur-sm opacity-90 group-hover:opacity-100 transition-opacity">
@@ -344,10 +344,10 @@ export default function FeaturedWorks() {
                   Project No. 2025.114
                 </span>
                 <h3 className="text-xl sm:text-3xl font-bold font-display text-[#090D16] mt-1 leading-snug">
-                  Rukos — Urban Living Complex
+                  Urban Shophouses — Modern Gable Living Complex
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-500 font-mono mt-1">
-                  Rukos &amp; Multi-Unit Residential Architecture
+                  Commercial &amp; Multi-Unit Residential Architecture
                 </p>
               </div>
 
@@ -359,7 +359,7 @@ export default function FeaturedWorks() {
               <div className="bg-slate-50 p-4 sm:p-5 rounded-2xl border border-slate-200/80 space-y-2.5 sm:space-y-3 text-xs">
                 <div className="flex justify-between py-1 border-b border-slate-200/60">
                   <span className="text-slate-500 font-medium">Typology</span>
-                  <span className="text-[#090D16] font-semibold text-right">3-Story Gable Rukos &amp; Shophouse Complex</span>
+                  <span className="text-[#090D16] font-semibold text-right">3-Story Gable Shophouse &amp; Multi-Unit Complex</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-slate-200/60">
                   <span className="text-slate-500 font-medium">Facade Feature</span>
@@ -377,12 +377,12 @@ export default function FeaturedWorks() {
 
               <div>
                 <a
-                  href="https://wa.me/6281234567890?text=Hello%20NIRWIKARA,%20I%20would%20like%20to%20inquire%20about%20a%20project%20similar%20to%20Rukos."
+                  href="https://wa.me/6281234567890?text=Hello%20NIRWIKARA,%20I%20would%20like%20to%20inquire%20about%20a%20project%20similar%20to%20Urban%20Shophouses."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 min-h-[46px] px-6 py-3 rounded-xl bg-slate-100 hover:bg-[#00AEEF] hover:text-white text-[#090D16] text-xs font-bold tracking-wider uppercase transition-all duration-200 active:scale-95 touch-manipulation shadow-sm cursor-pointer"
                 >
-                  <span>Inquire Rukos Project</span>
+                  <span>Inquire Shophouse Project</span>
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
@@ -394,7 +394,7 @@ export default function FeaturedWorks() {
         </div>
 
         {/* ========================================================================= */}
-        {/* CASE STUDY 04: RUMAH KOST EKSKLUSIF — MODERN BALINESE LIVING */}
+        {/* CASE STUDY 04: EXCLUSIVE BOARDING HOUSE — MODERN BALINESE LIVING */}
         {/* ========================================================================= */}
         <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-5 sm:p-10 lg:p-12 mb-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
@@ -407,11 +407,11 @@ export default function FeaturedWorks() {
               >
                 <img
                   src={activeKostImg}
-                  alt="Rumah Kost Eksklusif Elevation"
+                  alt="Exclusive Boarding House Elevation"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
                 />
                 <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-white/95 backdrop-blur-md px-3 py-1 rounded-md text-[11px] font-bold text-[#090D16] shadow-sm">
-                  Rumah Kost Eksklusif • Bali
+                  Exclusive Boarding House • Bali
                 </div>
                 
                 <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 bg-[#090D16]/85 text-white px-3 py-1.5 rounded-lg flex items-center gap-1.5 text-xs font-semibold backdrop-blur-sm opacity-90 group-hover:opacity-100 transition-opacity">
@@ -449,7 +449,7 @@ export default function FeaturedWorks() {
                   Project No. 2026.118
                 </span>
                 <h3 className="text-xl sm:text-3xl font-bold font-display text-[#090D16] mt-1 leading-snug">
-                  Rumah Kost Eksklusif — Modern Balinese Living
+                  Exclusive Boarding House — Modern Balinese Living
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-500 font-mono mt-1">
                   Bali • Exclusive Boarding House &amp; Rental Architecture
@@ -482,7 +482,7 @@ export default function FeaturedWorks() {
 
               <div>
                 <a
-                  href="https://wa.me/6281234567890?text=Hello%20NIRWIKARA,%20I%20would%20like%20to%20inquire%20about%20a%20project%20similar%20to%20Rumah%20Kost%20Eksklusif."
+                  href="https://wa.me/6281234567890?text=Hello%20NIRWIKARA,%20I%20would%20like%20to%20inquire%20about%20a%20project%20similar%20to%20Exclusive%20Boarding%20House%20Bali."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 min-h-[46px] px-6 py-3 rounded-xl bg-slate-100 hover:bg-[#00AEEF] hover:text-white text-[#090D16] text-xs font-bold tracking-wider uppercase transition-all duration-200 active:scale-95 touch-manipulation shadow-sm cursor-pointer"
