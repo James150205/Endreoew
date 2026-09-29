@@ -64,7 +64,7 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-50 border border-slate-200/90 shadow-sm">
             <span className="w-2 h-2 rounded-full bg-[#00AEEF] animate-pulse"></span>
             <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-slate-700">
-              Studio of Architecture &amp; Bespoke Interior
+              Design And Build Studio
             </span>
           </div>
 
