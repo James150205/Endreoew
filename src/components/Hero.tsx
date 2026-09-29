@@ -74,7 +74,7 @@ export default function Hero() {
           {/* Action Row */}
           <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-w-md mx-auto sm:max-w-none">
             <a
-              href="https://wa.me/qr/JQDCEWBBMW35I1?s=v"
+              href="https://wa.me/6285713844349"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-xs font-bold tracking-wider uppercase bg-[#090D16] hover:bg-[#00AEEF] text-white transition-all duration-200 shadow-md hover:shadow-xl hover:-translate-y-0.5 active:scale-95 focus-visible:ring-2 focus-visible:ring-[#00AEEF]"

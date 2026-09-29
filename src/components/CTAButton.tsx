@@ -8,7 +8,7 @@ export default function CTAButton() {
   return (
     <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40">
       <a
-        href="https://wa.me/qr/JQDCEWBBMW35I1?s=v"
+        href="https://wa.me/6285713844349"
         target="_blank"
         rel="noopener noreferrer"
         onMouseEnter={() => setIsHovered(true)}

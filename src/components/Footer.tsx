@@ -105,7 +105,7 @@ export default function Footer() {
 
             <div className="space-y-3 pt-1">
               <a
-                href="https://wa.me/qr/JQDCEWBBMW35I1?s=v"
+                href="https://wa.me/6285713844349"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white/10 hover:bg-[#00AEEF] text-white text-xs font-bold tracking-wider uppercase transition-all duration-200 border border-white/10 w-full justify-center active:scale-95 focus-visible:ring-2 focus-visible:ring-[#00AEEF]"

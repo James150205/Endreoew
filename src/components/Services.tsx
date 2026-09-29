@@ -94,7 +94,7 @@ export default function Services() {
                 </div>
 
                 <a
-                  href="https://wa.me/qr/JQDCEWBBMW35I1?s=v"
+                  href="https://wa.me/6285713844349"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-between px-4 py-2.5 rounded-xl bg-white hover:bg-[#00AEEF] hover:text-white text-[#090D16] border border-slate-200 text-xs font-bold tracking-wider uppercase transition-all duration-200 active:scale-95 shadow-sm group-hover:border-[#00AEEF]/40"

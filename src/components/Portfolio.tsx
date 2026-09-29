@@ -434,7 +434,7 @@ export default function Portfolio() {
                     {project.specs}
                   </span>
                   <a
-                    href="https://wa.me/qr/JQDCEWBBMW35I1?s=v"
+                    href="https://wa.me/6285713844349"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 min-h-[40px] px-4 py-2 rounded-xl bg-slate-100 hover:bg-[#00AEEF] hover:text-white text-[#090D16] text-xs font-bold transition-all duration-200 active:scale-95 touch-manipulation whitespace-nowrap shadow-sm cursor-pointer"
@@ -527,7 +527,7 @@ export default function Portfolio() {
                   {activeProject.desc}
                 </p>
                 <a
-                  href="https://wa.me/qr/JQDCEWBBMW35I1?s=v"
+                  href="https://wa.me/6285713844349"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 min-h-[44px] px-6 py-3 rounded-xl bg-[#00AEEF] hover:bg-white hover:text-[#090D16] text-white text-xs font-bold tracking-wider uppercase transition-all duration-200 active:scale-95 touch-manipulation shadow-lg flex-shrink-0"
