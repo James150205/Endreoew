@@ -61,12 +61,7 @@ export default function Hero() {
         
         {/* Top Editorial Row */}
         <div className="max-w-4xl mx-auto text-center space-y-6 mb-10 sm:mb-16">
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-50 border border-slate-200/90 shadow-sm">
-            <span className="w-2 h-2 rounded-full bg-[#00AEEF] animate-pulse"></span>
-            <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-slate-700">
-              Design And Build Studio
-            </span>
-          </div>
+
 
           <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-[#090D16] font-display leading-[1.08]">
             Shaping Spaces with Architectural Rigor &amp; Craft.
